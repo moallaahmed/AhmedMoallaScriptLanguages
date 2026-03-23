@@ -5,7 +5,7 @@ from utils import format_greeting
 
 def display_team(members):
     for member in members:
-        print("-", member)
+        print("-", member["name"])
 
 
 if __name__ == "__main__":
