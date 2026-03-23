@@ -1,4 +1,6 @@
-team_members = ["Ahmed Moalla"]
+team_members = [
+    {"name": "Ahmed Moalla"}
+]
 
 
 def get_team():
@@ -10,4 +12,11 @@ def count_members():
 
 
 def add_member(name):
-    team_members.append(name)
+    team_members.append({"name": name})
+
+
+def find_member(name):
+    for member in team_members:
+        if member["name"] == name:
+            return member
+    return None
