@@ -7,7 +7,6 @@ def display_team(members):
     for member in members:
         print("-", member["name"])
 
-
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Team CLI")
 
