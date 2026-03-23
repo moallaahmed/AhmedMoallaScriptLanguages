@@ -1,0 +1,2 @@
+This project was created for Assignment List 1.
+It demonstrates basic Python functions and GitHub workflow.
