@@ -16,15 +16,19 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    if args.show_team:
+    try:
+        if args.show_team:
         members = get_team()
         display_team(members)
 
-    elif args.count:
+        elif args.count:
         print(count_members())
 
-    elif args.greet:
+        elif args.greet:
         print(format_greeting(args.greet))
 
-    else:
+        else:
         print("No argument provided. Use --help")
+
+    except Exception as e:
+    print("Error:", str(e))
