@@ -1,23 +1,15 @@
-team_name = "Solo Project"
-team_members = ["Ahmed Moalla"]
-
-def count_members(members):
-    return len(members)
+from team import get_team, count_members
+from utils import format_greeting
 
 
-def format_greeting(name):
-    return f"Hello, {name}!"
-
-
-def display_team(name, members):
-    print("Team name:", name)
+def display_team(members):
     print("Team members:")
     for member in members:
         print("-", member)
 
 
 if __name__ == "__main__":
-    display_team(team_name, team_members)
-    print("Number of members:", count_members(team_members))
+    members = get_team()
+    display_team(members)
+    print("Number of members:", count_members())
     print(format_greeting("Ahmed"))
-    print("The project runs correctly.")
